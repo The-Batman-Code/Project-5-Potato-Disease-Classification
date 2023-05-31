@@ -66,7 +66,7 @@ const App = () => {
     return new Promise((resolve, reject) => {
       var bodyFormData = new FormData();
       bodyFormData.append('file', params);
-      const url = "https://pde-2-382419.uc.r.appspot.com/predict";
+      const url = "https://pde-2-382419.uc.r.appspot.com/predict";  // Enter your App-Engine link here
       return axios
         .post(url, bodyFormData)
         .then(response => {
