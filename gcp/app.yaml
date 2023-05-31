@@ -1,0 +1,12 @@
+runtime: python310
+
+handlers:
+- url: /.*
+  script: main.py
+
+instance_class: F4_1G
+
+env_variables:
+  PORT: "8080"
+  GOOGLE_CLOUD_STORAGE_BUCKET_NAME: my-project-bucket-04
+  GOOGLE_CLOUD_STORAGE_REGION: us-central1

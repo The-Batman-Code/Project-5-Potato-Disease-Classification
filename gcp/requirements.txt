@@ -1,0 +1,6 @@
+Pillow
+numpy
+tensorflow
+python-multipart
+flask
+flask_cors
