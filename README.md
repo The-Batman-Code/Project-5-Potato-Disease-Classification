@@ -75,7 +75,14 @@ gcloud app deploy
 16. The project will be deployed but it won't work
 17. Now on Google Cloud Console go to App Engine and click on services on the left pane. You will see a service names default. Click on it.
 18. You project will open. Copy the link of the project.
-19. Now we need to rebuild our react website using this link. Replace the link in the '.env' file with the URL you copied above
+19. Now we need to rebuild our react website using this link. Replace the link in the '.env' file with the URL you copied above and rebuild the react project. For example - 
+```
+REACT_APP_API_URL=https://pde-2-382419.uc.r.appspot.com/predict
+```
+20. Now follow step 2 to step 15 again from this section.
+21. Your project will be deployed and should work now🥰.
+22. To cut additional cost, go to google cloud storage and delete all the buckets associated with this project.
+23. Congratulations😁😁!!
 
 
 
