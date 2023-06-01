@@ -84,7 +84,10 @@ REACT_APP_API_URL=https://pde-2-382419.uc.r.appspot.com/predict
 22. To cut additional cost, go to google cloud storage and delete all the buckets associated with this project.
 23. Congratulations😁😁!!
 
-
+#  Create the Android App - 
+1. Setup Android Development environment [https://reactnative.dev/docs/environment-setup]
+1. Navigate to 'mobile' folder in terminal and in IDE both.
+2. 
 
 
 
