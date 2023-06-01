@@ -59,6 +59,7 @@ npm run build
 10. Copy your 'potatoes.h5' model file to 'app_engine' folder.
 11. Change the model address appropriately in 'main.py'.
 12. The final structure should look something like this👇
+
 ![](picture2.png)
 13. Now open the terminal and set your Google Cloud Project ID using the following command.
 ```
