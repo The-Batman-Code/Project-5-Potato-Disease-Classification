@@ -61,6 +61,7 @@ npm run build
 12. The final structure should look something like this👇
 
 ![](picture2.png)
+
 13. Now open the terminal and set your Google Cloud Project ID using the following command.
 ```
 gcloud config set project [Your project ID here]
