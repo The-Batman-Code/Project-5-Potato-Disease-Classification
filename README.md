@@ -41,8 +41,41 @@ REACT_APP_API_URL=http://127.0.0.1:8080/predict
 ```
 npm run start
 ```
-7. Congratulations!! Your website should work now locally
+7. Congratulations!! Your website should work now locally.
 
+# Deploy on Google Cloud's App Engine - 
+1. Pre-requisites are that you should know the basics of how to operate GCP Console and should have a billing account.
+2. Now we need a production ready build for our React website. To build the production ready website, enter the following command.
+```
+npm run build
+```
+3. This will create a folder named 'build' which will have a folder named 'static' and other files with it.
+4. Move the other files into the 'static' folder.
+5. Go to App Engine on Google Cloud Console.
+6. Now click on 'Activate Cloud Shell' and then click on 'Open in new window'.
+7. Create a folder named 'app_engine' and copy the 'static' folder into it.
+8. Copy your 'flask_code.py' file into 'app_engine' folder and rename it to 'main.py'. 
+9. Copy the 'app.yaml' and 'requirements.txt' files from the 'gcp' folder in this repo to 'app_engine' folder.
+10. Copy your 'potatoes.h5' model file to 'app_engine' folder.
+11. Change the model address appropriately in 'main.py'.
+12. The final structure should look something like this👇
+![](picture2.png)
+13. Now open the terminal and set your Google Cloud Project ID using the following command.
+```
+gcloud config set project [Your project ID here]
+```
+14. After the project ID is set, navigate to the 'app_engine' folder using the following command.
+```
+cd app_engine
+```
+15. Now enter the following command to deploy your project.
+```
+gcloud app deploy
+```
+16. The project will be deployed but it won't work
+17. Now on Google Cloud Console go to App Engine and click on services on the left pane. You will see a service names default. Click on it.
+18. You project will open. Copy the link of the project.
+19. Now we need to rebuild our react website using this link. Replace the link in the '.env' file with the URL you copied above
 
 
 
