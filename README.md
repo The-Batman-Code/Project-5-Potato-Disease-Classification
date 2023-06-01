@@ -85,10 +85,25 @@ REACT_APP_API_URL=https://pde-2-382419.uc.r.appspot.com/predict
 23. Congratulations😁😁!!
 
 #  Create the Android App - 
-1. Setup Android Development environment [https://reactnative.dev/docs/environment-setup]
-1. Navigate to 'mobile' folder in terminal and in IDE both.
-2. 
+1. Setup Android Development environment [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab. Stop at the heading 'Creating a new application'.
+2. Run Android Studio and set up a virtual device/emulator.
+3. Navigate to 'mobile' folder in terminal and in IDE both.
+4. Open 'App.js' file in your IDE and put your App Engine link at this place👇
+![](picture3.png)
+5. Type the following command in the terminal with your android emulator device open in the background.
+```
+npm run android
+```
+6. The android app will compile and start to run in your emulator like this👇
+![](picture4.png)
+7. To create an APK please research a bit on internet and youtube.
 
+# Troubleshooting - 
+1. Make use of internet.
+2. Use LLMs like ChatGPT and Google's Bard to resolve most errors.
+3. Raise an issue, I will look into it.
+
+# Have a happy day!!!😇😇
 
 
 
